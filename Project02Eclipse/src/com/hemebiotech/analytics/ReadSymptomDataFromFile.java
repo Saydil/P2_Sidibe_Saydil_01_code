@@ -1,34 +1,36 @@
 package com.hemebiotech.analytics;
 
 import java.io.BufferedReader;
+
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.List;
 
-/**
- * Simple brute force implementation
- *
+/*
+ * Collect all the symptoms in a TreeMap without setup the value
  */
-public class ReadSymptomDataFromFile implements ISymptomReader {
 
-	private String filepath;
+public class ReadSymptomDataFromFile implements ISymptomReader{
 	
+	private String file;
 	/**
 	 * 
 	 * @param filepath a full or partial path to file with symptom strings in it, one per line
 	 */
-	public ReadSymptomDataFromFile (String filepath) {
-		this.filepath = filepath;
+	public ReadSymptomDataFromFile (String file) {
+		this.file = file;
 	}
 	
+	/*
+	 * 
+	 */
+	
 	@Override
-	public List<String> GetSymptoms() {
+	public ArrayList<String> symptomsList() {
 		ArrayList<String> result = new ArrayList<String>();
-		
-		if (filepath != null) {
+		if (file != null) {
 			try {
-				BufferedReader reader = new BufferedReader (new FileReader(filepath));
+				BufferedReader reader = new BufferedReader (new FileReader(file));
 				String line = reader.readLine();
 				
 				while (line != null) {

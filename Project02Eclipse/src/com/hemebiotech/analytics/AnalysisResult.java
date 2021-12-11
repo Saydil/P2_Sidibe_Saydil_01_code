@@ -7,7 +7,7 @@ import java.io.IOException;
 import java.util.Set;
 
 /*
- * Return a text file named "result.txt" with a list of symptoms and their occurrence
+ * Return a text file named "result.out" with a list of symptoms and their occurrence
  */
 
 public class AnalysisResult {

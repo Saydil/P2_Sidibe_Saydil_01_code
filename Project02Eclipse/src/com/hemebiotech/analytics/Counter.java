@@ -12,6 +12,10 @@ public class Counter {
 	
 	ArrayList <String> symptomsList = new ArrayList<String>(); 
 	
+	/*
+	 * @param receive a symptoms list in a ArrayList  
+	 */
+	
 	public Counter (ArrayList<String> list) { 
 		symptomsList = new ArrayList<String> (list);
 	}

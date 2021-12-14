@@ -15,7 +15,7 @@ public class AnalysisResult {
 	public static void main(String args[]) throws IOException  {
 		
 		TreeMap<String, Integer> a = new TreeMap<String, Integer>(); 
-		AnalyzeSymptoms test = new AnalyzeSymptoms("C://Users/home/Desktop/Cours_Openclassrooms/Project_DA_Java_EN_Come_to_the_Rescue_of_a_Java_Application/Project02Eclipse/symptoms.txt");
+		AnalyzeSymptoms test = new AnalyzeSymptoms("symptoms.txt");
 		
 		a.putAll(test.symptomsList());
 		

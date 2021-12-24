@@ -9,18 +9,20 @@ import java.util.ArrayList;
  * Collect all the symptoms in a TreeMap without setup the value
  */
 
-public class GetSymptomsData implements ISymptomReader{
+public class ReadSymptomDataFromFile implements ISymptomReader{
 	
 	private String file;
 	/**
 	 * 
 	 * @param filepath a full or partial path to file with symptom strings in it, one per line
 	 */
-	public GetSymptomsData (String file) {
+	public ReadSymptomDataFromFile (String file) {
 		this.file = file;
 	}
 	
-	
+	/*
+	 * @param collect the symptoms in a ArrayList
+	 */
 	
 	@Override
 	public ArrayList<String> symptomsList() {

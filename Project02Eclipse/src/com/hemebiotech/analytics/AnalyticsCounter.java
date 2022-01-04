@@ -14,12 +14,15 @@ public class AnalyticsCounter {
 	
 	private String fileLink;
 	private TreeMap<String , Integer> list = new TreeMap<String , Integer>();
+	/*
+	 * @param full or partial path to file with symptom strings in it, one per line
+	 */
 	public AnalyticsCounter (String fileLink) {
 		this.fileLink = fileLink;
 	}
 	
 	/*
-	 * @param Use the TreeMap from GetSymptomsData in replacing all null value by the occurrence of each symptoms
+	 * @return a TreeMap with symptoms as keys and their occurrence as value
 	 */
 	
 	public void symptomsList () {
@@ -39,7 +42,9 @@ public class AnalyticsCounter {
 
 	}
 	
-	
+	/*
+	 * @return a display of the TreeMap
+	 */
 	
 	public void writeResult () throws IOException {
 		

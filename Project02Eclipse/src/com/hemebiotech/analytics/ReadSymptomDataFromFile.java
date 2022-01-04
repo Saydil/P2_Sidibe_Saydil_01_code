@@ -14,14 +14,14 @@ public class ReadSymptomDataFromFile implements ISymptomReader{
 	private String file;
 	/**
 	 * 
-	 * @param filepath a full or partial path to file with symptom strings in it, one per line
+	 * @param full or partial path to file with symptom strings in it, one per line
 	 */
 	public ReadSymptomDataFromFile (String file) {
 		this.file = file;
 	}
 	
 	/*
-	 * @param collect the symptoms in a ArrayList
+	 * @return the symptoms list in a ArrayList
 	 */
 	
 	@Override

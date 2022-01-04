@@ -12,7 +12,7 @@ public class Counter {
 	ArrayList <String> symptomsList = new ArrayList<String>(); 
 	
 	/*
-	 * @param receive a symptoms list in a ArrayList  
+	 * @param receive a ArrayList of string 
 	 */
 	
 	public Counter (ArrayList<String> list) { 
@@ -20,8 +20,8 @@ public class Counter {
 	}
 	
 	/*
-	 * @param The counter method take a symptom in entry
-	 * @return Return the occurrence of this symptom from the ArrayList
+	 * @param take a symptom in entry
+	 * @return the occurrence of this symptom from the ArrayList
 	 */
 	
     

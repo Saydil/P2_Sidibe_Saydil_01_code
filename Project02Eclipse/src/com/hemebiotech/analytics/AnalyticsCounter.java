@@ -15,14 +15,14 @@ public class AnalyticsCounter {
 	private String fileLink;
 	private TreeMap<String , Integer> list = new TreeMap<String , Integer>();
 	/*
-	 * @param full or partial path to file with symptom strings in it, one per line
+	 * @param fileLink , a full or partial path to file with symptom strings in it, one per line
 	 */
 	public AnalyticsCounter (String fileLink) {
 		this.fileLink = fileLink;
 	}
 	
 	/*
-	 * @return a TreeMap with symptoms as keys and their occurrence as value
+	 * @return list , a TreeMap with symptoms as keys and their occurrence as value
 	 */
 	
 	public void symptomsList () {
